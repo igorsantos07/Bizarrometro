@@ -9,7 +9,7 @@ abstract class ActiveRecord {
 			$pdo = new PDO(
 				'mysql:dbname=bizarrometro;host=localhost', 
 				'root', 
-				'123456'
+				'mysql'
 			);
 		} catch (PDOException $e) {
 			echo 'Connection failed: ' . $e->getMessage();
